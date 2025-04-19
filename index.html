@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drop Segreto</title>
+  <script>
+    function checkPassword() {
+      const pw = prompt("Inserisci la password per accedere al drop:");
+      if (pw !== "youarethekey") {
+        alert("Accesso negato.");
+        window.location.href = "https://google.com";
+      }
+    }
+  </script>
+</head>
+<body onload="checkPassword()" style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
+  <h1>🎉 Benvenuto al Drop Esclusivo 🎉</h1>
+  <p>Solo chi ha la chiave può entrare. Buona fortuna!</p>
+</body>
+</html>
